@@ -6,6 +6,6 @@ int main(){
         printf("Set");
     }
     else{
-        printf("Reset");
+        printf("Not Set");
     }
 }
