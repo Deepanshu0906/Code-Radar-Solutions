@@ -3,7 +3,7 @@
 int main(){
     char alpha;
     scanf("%c"&aplha);
-    if(islower(alpha)){
+    if(isupper(alpha)){
         printf("Uppercase");
     }
     else{
