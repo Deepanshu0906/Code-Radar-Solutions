@@ -2,7 +2,7 @@
 #include <ctype.h>
 int main(){
     char alpha;
-    scanf("%c",&aplha);
+    scanf("%c",&alpha);
     if(isupper(alpha)){
         printf("Uppercase");
     }
