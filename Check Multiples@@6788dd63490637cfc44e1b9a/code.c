@@ -1,9 +1,9 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int a,b;
-    float c=a/b;
+    int a,b;    
     scanf("%d %d",&a,b);
+    float c=a/b;
     if(c==b){
         printf("Yes");
     }
