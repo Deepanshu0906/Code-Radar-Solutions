@@ -5,6 +5,6 @@ int main(){
     scanf("%d",&row);
     for(i=0;i<row;i++){
         printf("* ");
-    }
     printf("\n");
+    }
 }
