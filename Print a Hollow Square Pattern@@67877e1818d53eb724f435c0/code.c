@@ -6,7 +6,7 @@ int main() {
     for(i = 0; i < side; i++) {
         for(j = 0; j < side; j++) {
             if(i == 0 || i == side-1 || j == 0 || j == side-1) {
-                printf("* ");
+                printf("*");
             } else {
                 printf("  ");
             }
