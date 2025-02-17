@@ -3,5 +3,5 @@
 int main(){
     int number,bit;
     scanf("%d %d",&number,&bit);
-    printf("%d",number>>bit);
+    printf("%d",(number>>bit)&1);
 }
