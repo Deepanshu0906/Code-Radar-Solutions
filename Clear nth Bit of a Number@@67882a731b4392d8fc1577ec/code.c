@@ -1,7 +1,7 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int number,bit;
-    scanf("%d %d",&number,&bit);
-    printf("%d",(number>>bit));
+    int n,p;
+    scanf("%d %d",&n,&p);
+    printf("%d",(n>>(p+1)<<(p+1))|(n&(1<<p)-1));
 }
