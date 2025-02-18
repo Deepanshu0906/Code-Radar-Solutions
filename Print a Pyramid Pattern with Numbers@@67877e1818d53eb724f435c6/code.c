@@ -7,8 +7,8 @@ int main() {
         for (space = 0; space < row - i - 1; space++) {
             printf(" ");
         }
-        for (j = 0; j < (i * 2) + 1; j++) {
-            printf("%d ",j+1);
+        for (j = 1; j < (i * 2) + 2; j++) {
+            printf("%d ",j);
         }
         printf("\n");
     }
