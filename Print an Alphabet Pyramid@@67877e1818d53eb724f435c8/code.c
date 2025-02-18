@@ -6,7 +6,7 @@ int main() {
     char alpha='A';
     scanf("%d", &row);
     for (i = 0; i <= row-1; i++) {
-        for (space = 0; space < row - i-1; space++) {
+        for (space = 0; space < row - i-2; space++) {
             printf(" ");
         }
         for (j = 0; j <= i; j++) {
