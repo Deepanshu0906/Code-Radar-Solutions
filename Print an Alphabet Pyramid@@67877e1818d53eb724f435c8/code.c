@@ -2,16 +2,14 @@
 #include <stdio.h>
 
 int main() {
-    int row, i, j, space;
-    char alpha='A';
+    int row, i, j;
+    char ch = 'A';
     scanf("%d", &row);
-    for (i = 0; i <= row-1; i++) {
-        for (space = 0; space < row - i-2; space++) {
-            printf(" ");
-        }
+    for (i = 0; i < row; i++) {
         for (j = 0; j <= i; j++) {
-            printf("%c ", alpha +j);
+            printf("%c ", ch + j);
         }
         printf("\n");
     }
+    return 0;
 }
