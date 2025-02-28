@@ -1,4 +1,3 @@
-// Loading Code...
 #include <stdio.h>
 
 void bubbleSort(int arr[], int n) {
@@ -12,6 +11,7 @@ void bubbleSort(int arr[], int n) {
         }
     }
 }
+
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
@@ -21,13 +21,21 @@ void printArray(int arr[], int size) {
 
 int main() {
     int n;
-    scanf("%d", &n);
-    int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    if (scanf("%d", &n) != 1) {
+        return 1;
     }
+
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        if (scanf("%d", &arr[i]) != 1) {
+            return 1;
+        }
+    }
+
     bubbleSort(arr, n);
     printf("Sorted array: ");
     printArray(arr, n);
+
     return 0;
 }
