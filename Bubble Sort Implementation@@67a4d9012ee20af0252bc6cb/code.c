@@ -19,23 +19,3 @@ void printArray(int arr[], int size) {
     printf("\n");
 }
 
-int main() {
-    int n;
-    if (scanf("%d", &n) != 1) {
-        return 1;
-    }
-
-    int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        if (scanf("%d", &arr[i]) != 1) {
-            return 1;
-        }
-    }
-
-    bubbleSort(arr, n);
-    printf("Sorted array: ");
-    printArray(arr, n);
-
-    return 0;
-}
