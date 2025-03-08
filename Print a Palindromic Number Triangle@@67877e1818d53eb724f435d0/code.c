@@ -12,7 +12,7 @@ int main() {
         }
         // Print decreasing numbers
         for (int j = i - 1; j >= 1; j--) {
-            printf("%d", j);
+            printf("%d ", j);
         }
         printf("\n");  // Move to the next row
     }
