@@ -19,7 +19,7 @@ int main() {
         scanf("%lf %s %f", &students[i].rollNumber,students[i].name,&students[i].marks);
     }
     for (i = 0; i < n; i++) {
-        printf("Roll Number: %.0lf, Name: %s, Marks: %.2f",students[i].rollNumber,students[i].name,students[i].marks);
+        printf("Roll Number: %.0lf, Name: %s, Marks: %.2f\n",students[i].rollNumber,students[i].name,students[i].marks);
     }
 
     return 0;
