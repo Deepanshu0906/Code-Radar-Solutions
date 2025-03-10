@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    printf(" Top Scorer: Roll Number: %.0lf,Name: %s,Marks: %f", topScorer.rollNumber);
+    printf(" Top Scorer: Roll Number: %.0lf,Name: %s,Marks: %f", topScorer.rollNumber,topScorer.name,topScorer.marks);
 
     return 0;
 }
