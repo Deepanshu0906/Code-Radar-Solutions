@@ -1,7 +1,6 @@
 // Your code here...
 #include <stdio.h>
 #include <string.h>
-
 struct Student {
     double rollNumber;
     char name[50];
@@ -10,7 +9,6 @@ struct Student {
 int main() {
     int n, i;
     scanf("%d", &n);
-
     struct Student students[n];
     struct Student topScorer; 
     float maxMarks = -1;
