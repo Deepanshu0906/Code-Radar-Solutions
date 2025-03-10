@@ -7,10 +7,8 @@ struct Student {
     char name[50];
     float marks;
 };
-
 int main() {
     int n, i;
-
     scanf("%d", &n);
 
     struct Student students[n];
