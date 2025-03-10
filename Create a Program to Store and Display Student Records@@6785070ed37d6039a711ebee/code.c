@@ -16,7 +16,7 @@ int main() {
     struct Student students[n];
 
     for (i = 0; i < n; i++) {
-        scanf("%lf %s %f", &students[i].rollNumber,student[i].name,&student[i].marks);
+        scanf("%lf %s %f", &students[i].rollNumber,students[i].name,&students[i].marks);
     }
     for (i = 0; i < n; i++) {
         printf("Roll Number: %.0lf, Name: %s, Marks: %.2f",students[i].rollNumber,students[i].name,students[i].marks);
