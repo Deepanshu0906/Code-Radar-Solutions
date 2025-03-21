@@ -27,7 +27,7 @@ int main() {
     // count=count+1+t;
     printf("%d\n",count);
     for( int k=0;k<count;k++){
-        sum=sum+binary[count-1-k]*pow(2,k);
+        sum=sum+binary[count-1-k]*power(2,k);
         // printf("%d",sum);
     }
     printf("%d\n",sum);
