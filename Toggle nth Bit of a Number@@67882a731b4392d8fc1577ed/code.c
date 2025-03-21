@@ -32,7 +32,7 @@ int main() {
         sum += binary[j] * multiplier;
         multiplier *= 2; // Move to the next power of 2
     }
-    printf("\n%d\n", sum);
+    printf("%d\n", sum);
 
     return 0;
 }
