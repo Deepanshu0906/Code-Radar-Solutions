@@ -1,35 +1,40 @@
 #include <stdio.h>
-#include<math.h>
+
+// Custom function to calculate power
+int myPow(int base, int exp) {
+    int result = 1;
+    while (exp > 0) {
+        result *= base;
+        exp--;
+    }
+    return result;
+}
+
 int main() {
-    int n, t, i = 0,count=0,sum=0,;
+    int n, t, i = 0, count = 0, sum = 0;
     int binary[1000];
     
     scanf("%d %d", &n, &t);
     
+    // Convert n to binary
     while (n > 0) {
         binary[i] = n % 2;
         n = n / 2;
         i++;
     }
-    for (int j = i - 1; j >= 0; j--) {
-        count=count+1;
-        // printf("%d\n", binary[j]);
+
+    // Toggle the t-th bit
+    if (binary[t] == 0) {
+        binary[t] = 1;
+    } else {
+        binary[t] = 0;
     }
-    count=count-1-t;
-    // printf("%d",binary[count]);
-    if(binary[count]=0){
-        binary[count]=1;
-        // printf("%d\n",binary[count]);
+
+    // Convert binary back to decimal
+    for (int j = 0; j < i; j++) {
+        sum += binary[j] * myPow(2, j);
     }
-    else{
-        binary[count]=0;
-    }
-    // count=count+1+t;
-    printf("%d\n",count);
-    for( int k=0;k<count;k++){
-        sum=sum+binary[count-1-k]*(2,k);
-        // printf("%d",sum);
-    }
-    printf("%d\n",sum);
+
+    printf("%d\n", sum);
     return 0;
 }
