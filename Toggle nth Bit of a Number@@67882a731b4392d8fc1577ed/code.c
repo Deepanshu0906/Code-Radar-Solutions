@@ -1,38 +1,35 @@
 #include <stdio.h>
-
+#include<math.h>
 int main() {
-    int n, t, i = 0;
+    int n, t, i = 0,count=0,sum=0,;
     int binary[1000];
-
-    // Read inputs
+    
     scanf("%d %d", &n, &t);
-
-    // Convert the number to binary and store it in reverse order
+    
     while (n > 0) {
-        binary[i] = n % 2; // Store the remainder (bit value)
-        n = n / 2;         // Divide by 2 to get the next bit
+        binary[i] = n % 2;
+        n = n / 2;
         i++;
     }
-
-    // Ensure that the array has at least `t` bits
-    if (t > i) {
-        for (int j = i; j < t; j++) {
-            binary[j] = 0; // Fill with zeros if necessary
-        }
-        i = t; // Update the length of the binary array
+    for (int j = i - 1; j >= 0; j--) {
+        count=count+1;
+        // printf("%d\n", binary[j]);
     }
-
-    // Toggle the t-th bit (from LSB). The index in the binary array is t-1.
-    int index_to_toggle = t - 1;
-    binary[index_to_toggle] = 1 - binary[index_to_toggle]; // Flip the bit
-
-    // Convert the modified binary back to decimal
-    int sum = 0, multiplier = 1;
-    for (int j = 0; j < i; j++) {
-        sum += binary[j] * multiplier;
-        multiplier *= 2; // Move to the next power of 2
+    count=count-1-t;
+    // printf("%d",binary[count]);
+    if(binary[count]=0){
+        binary[count]=1;
+        // printf("%d\n",binary[count]);
     }
-    printf("%d\n", sum);
-
+    else{
+        binary[count]=0;
+    }
+    // count=count+1+t;
+    printf("%d\n",count);
+    for( int k=0;k<count;k++){
+        sum=sum+binary[count-1-k]*(2,k);
+        // printf("%d",sum);
+    }
+    printf("%d\n",sum);
     return 0;
 }
