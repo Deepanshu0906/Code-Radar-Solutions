@@ -10,6 +10,6 @@ int digitalRightShift(int A){
         count+=1;
     }
     for(int j=0;j<count;j++){
-        return array[j]
+        return array[j] ;
     }
 }
