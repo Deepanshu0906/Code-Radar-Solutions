@@ -47,6 +47,6 @@ int main() {
         sum += binary[k] * myPow(2, k);  
     }
 
-    printf("-%d\n", sum);
+    printf("%d\n", sum);
     return 0;
 }
