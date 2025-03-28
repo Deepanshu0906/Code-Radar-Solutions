@@ -8,7 +8,7 @@ int main() {
         n = n / 2;
         i++;
     }
-    for(int j=0;j<i;j++){
+    for(int j=i;j>0;j--){
         printf("%d",binary[j]);
     }
 }
