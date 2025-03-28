@@ -1,7 +1,7 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int size,rotate;
+    int size,rotate,a;
     scanf("%d",&size);
     int ar[size],ar1[size];
     for(int i=0;i<size;i++){
@@ -9,8 +9,12 @@ int main(){
     }
     scanf("%d",&rotate);
     for(int j=0;j<size;j++){
-        ar[j]=ar1[(j+rotate)%size];
-        printf("%d\n",ar[j]);
+        a=(j+rotate)%size;
+        ar1[a]=ar[j]
+        
+    }
+    for(int j=0;j<size;j++){
+        printf("%d",ar1[j]);
     }
 
 }
