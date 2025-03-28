@@ -14,7 +14,7 @@ int main() {
         i++;
     }
     for(int j=i-1;j>=0;j--){
-        if(binary[j]==0){
+        if(binary[j]=0){
             count++;
         }
     }}
