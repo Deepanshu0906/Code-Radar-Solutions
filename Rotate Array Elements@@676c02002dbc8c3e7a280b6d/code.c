@@ -9,7 +9,7 @@ int main(){
     }
     scanf("%d",&rotate);
     for(int j=0;j<size;j++){
-        ar1[j]=ar[(j+rotate-1)%size];
+        ar1[j]=ar[(j+rotate)%size];
         printf("%d\n",ar1[j]);
     }
 
