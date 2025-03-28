@@ -14,7 +14,7 @@ int main(){
         
     }
     for(int j=0;j<size;j++){
-        printf("%d",ar1[j]);
+        printf("%d\n",ar1[j]);
     }
 
 }
