@@ -3,14 +3,14 @@
 int main(){
     int size,rotate;
     scanf("%d",&size);
-    array[size],array1[size];
+    ar[size],ar1[size];
     for(int i=0;i<size;i++){
-        scanf("%d\n",&array[i]);
+        scanf("%d\n",&ar[i]);
     }
     scanf("%d",&rotate);
     for(int j=0;j<size;j++){
-        array1[j]=array[(j+rotate)%size];
-        printf("%d",array1[j]);
+        ar1[j]=ar[(j+rotate)%size];
+        printf("%d",ar1[j]);
     }
 
 }
