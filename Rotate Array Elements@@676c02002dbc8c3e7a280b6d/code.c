@@ -3,7 +3,7 @@
 int main(){
     int size,rotate;
     scanf("%d",&size);
-    ar[size],ar1[size];
+    int ar[size],ar1[size];
     for(int i=0;i<size;i++){
         scanf("%d\n",&ar[i]);
     }
