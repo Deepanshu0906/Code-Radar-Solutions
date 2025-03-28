@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main() {
     int n,i = 0;
     int binary[1000];
