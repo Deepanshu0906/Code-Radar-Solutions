@@ -3,7 +3,7 @@ int main() {
     int n,i=0;
     int binary[10000];
     scanf("%d",&n);
-    if(n=0){
+    if(n==0){
         printf("%d",0);
     }
     else{
