@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main() {
     int n,i = 0;
-    int binary[1000000000];
+    int binary[100000000];
     scanf("%d",&n);
     while (n > 0) {
         binary[i] = n % 2;
