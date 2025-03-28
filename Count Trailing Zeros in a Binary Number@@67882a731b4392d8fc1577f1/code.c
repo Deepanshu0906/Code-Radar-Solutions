@@ -15,7 +15,7 @@ int main() {
     }
     for(int j=0;j<i;j++){
         if(binary[j]==0){
-            count++;
+            count+=1;
         }
     }}
     printf("%d",count);
