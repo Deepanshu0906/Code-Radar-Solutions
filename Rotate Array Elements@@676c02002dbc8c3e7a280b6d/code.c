@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&rotate);
     for(int j=0;j<size;j++){
         a=(j+rotate)%size;
-        ar1[a]=ar[j]
+        ar1[a]=ar[j];
         
     }
     for(int j=0;j<size;j++){
