@@ -6,9 +6,10 @@ void printPrimesInRange(int a,int b){
             if(i%j==0 && i!=1 && i!=2 && i!=0){
                 count+=1;
             }
+            if(count==0){
+                printf("%d ",i);
+            }
         }
-        if(count==0){
-            printf("%d ",i);
-        }
+        
     }
 }
