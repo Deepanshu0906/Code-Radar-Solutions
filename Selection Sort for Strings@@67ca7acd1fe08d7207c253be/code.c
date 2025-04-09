@@ -1,5 +1,5 @@
 // Your code here...
-void selectionSort(char arr[*],int n){
+void selectionSort(char arr[][100],int n){
     for(int step=0;step<n-1;step++){
         for( int i=0;i<n-step-1;i++){
             if(arr[i]>arr[i+1]){
