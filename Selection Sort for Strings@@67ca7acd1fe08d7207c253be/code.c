@@ -10,7 +10,7 @@ void selectionSort(char arr[][100],int n){
         }
     }
 }
-void printArray(char arr[],int n){
+void printArray(char arr[][100],int n){
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
