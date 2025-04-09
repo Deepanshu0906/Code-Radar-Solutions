@@ -8,7 +8,7 @@ int caesarCipher(char message[], int shift, char encrypted[]) {
         } else if (ch >= 'a' && ch <= 'z') {
             encrypted[i] = ((ch - 'a' + shift) % 26) + 'a'; 
         } else {
-            encrypted[i] = ch; 
+            // encrypted[i] = ch; 
         }
     }
 
