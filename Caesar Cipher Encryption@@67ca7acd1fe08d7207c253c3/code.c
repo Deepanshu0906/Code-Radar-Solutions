@@ -4,14 +4,14 @@ int caesarCipher(char message[], int shift, char encrypted[]) {
         char ch = message[i];
 
         if (ch >= 'A' && ch <= 'Z') {
-            encrypted[i] = ((ch - 'A' + shift) % 26) + 'A'; // Uppercase shift
+            encrypted[i] = ((ch - 'A' + shift) % 26) + 'A'; 
         } else if (ch >= 'a' && ch <= 'z') {
-            encrypted[i] = ((ch - 'a' + shift) % 26) + 'a'; // Lowercase shift
+            encrypted[i] = ((ch - 'a' + shift) % 26) + 'a'; 
         } else {
-            encrypted[i] = ch; // Keep spaces & special characters unchanged
+            encrypted[i] = ch; 
         }
     }
 
-    encrypted[i] = '\0'; // Terminate encrypted string properly
+    encrypted[i] = '\0'; 
     return 0;
 }
