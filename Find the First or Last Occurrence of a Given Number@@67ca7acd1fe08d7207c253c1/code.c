@@ -10,7 +10,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
                     return i; 
                 }
                 else{
-                    return -1;
+                    return tar;
                 }
                 
             } 
@@ -23,7 +23,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
                     return i; 
                 }
                 else{
-                    return -1;
+                    return tar;
                 }
                 
             }
