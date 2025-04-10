@@ -5,7 +5,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
             if(arr[i]==target){
                 return i;
             }
-            else(){
+            else{
                 return -1;
             }
         }
@@ -14,7 +14,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
             if(arr[i]==target){
                 return i;
             }
-            else(){
+            else{
                 return -1;
             }
         }
