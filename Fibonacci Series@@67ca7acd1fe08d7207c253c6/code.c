@@ -10,8 +10,8 @@ int fibonacciSeries1(int n){
 
 }
 void fibonacciSeries(int n){
-    for(i=1;i<=n;i++){
+    for(int i=1;i<=n;i++){
         
-        printf("%d ",fibonacciSeries1(i);)
+        printf("%d ",fibonacciSeries1(i));
     }
 }
