@@ -13,6 +13,7 @@ void peakElement(int arr[],int n){
             break;
         }else{
             printf("%d",arr[i+1]);
+            break;
         }
     }
 }
