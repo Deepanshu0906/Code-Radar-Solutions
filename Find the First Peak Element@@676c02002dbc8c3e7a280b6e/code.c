@@ -8,9 +8,11 @@ void peakElement(int arr[],int n){
         }else if(arr[i]>arr[i+1]&& arr[i]<arr[i+2]){
             printf("%d",arr[i+2]);
             break;
+        }else if(arr[i]<arr[i+1]&& arr[i+1]<arr[i+2]){
+            printf("%d",arr[i+2]);
+            break;
         }else{
             printf("%d",arr[i+1]);
-            break;
         }
     }
 }
